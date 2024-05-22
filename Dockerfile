@@ -7,4 +7,4 @@ ADD app.py app.py
 EXPOSE 80
 ENV HOST "0.0.0.0"
 ENV PORT "80"
-CMD ["python", "app.py"]
+CMD ["gunicorn", "app:server", "--bind", "0.0.0.0:80"]

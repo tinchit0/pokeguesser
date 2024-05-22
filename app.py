@@ -10,6 +10,7 @@ external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 df = pd.read_csv('data/pokemon.csv')
 pokeball_path = "data/img/Pokeball.png"
 app = Dash(external_stylesheets=external_stylesheets)
+server = app.server
 game = {}
 
 
